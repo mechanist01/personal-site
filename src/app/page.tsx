@@ -3,7 +3,9 @@ import { MiniProjectCard } from '@/components/MiniProjectCard';
 
 export default async function Home() {
   const projects = await getProjects();
-  const latestProjects = projects.slice(0, 3);
+  const latestProjects = projects
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
 
   return (
     <div className="max-w-4xl mx-auto">
