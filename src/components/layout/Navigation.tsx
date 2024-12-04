@@ -137,7 +137,9 @@ export function Navigation({ children }: { children: React.ReactNode }) {
                 </div>
               )}
             </div>
-            <Mail className="w-5 h-5 cursor-pointer hover:text-zinc-300 transition-colors" />
+            <a href="mailto:mavens_berries7n@icloud.com">
+              <Mail className="w-5 h-5 cursor-pointer hover:text-zinc-300 transition-colors" />
+            </a>
             <a href="https://www.instagram.com/ryanalexander.io/" target="_blank" rel="noopener noreferrer">
               <Instagram className="w-5 h-5 cursor-pointer hover:text-zinc-300 transition-colors" />
             </a>
