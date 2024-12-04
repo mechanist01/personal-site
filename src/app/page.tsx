@@ -3,9 +3,18 @@ import { MiniProjectCard } from '@/components/MiniProjectCard';
 
 export default async function Home() {
   const projects = await getProjects();
-  const latestProjects = projects
+  
+  // Separate pinned and unpinned projects
+  const pinnedProjects = projects.filter(project => project.pinned);
+  const unpinnedProjects = projects.filter(project => !project.pinned);
+  
+  // Sort unpinned projects by date and get the latest ones
+  const latestUnpinnedProjects = unpinnedProjects
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 3);
+    .slice(0, 3 - pinnedProjects.length); // Adjust slice to account for pinned projects
+    
+  // Combine pinned and latest projects
+  const displayProjects = [...pinnedProjects, ...latestUnpinnedProjects];
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -17,7 +26,7 @@ export default async function Home() {
       <div className="mb-6">
         <h2 className="text-lg font-medium mb-4">Latest Projects</h2>
         <div className="space-y-4">
-          {latestProjects.map((project) => (
+          {displayProjects.map((project) => (
             <MiniProjectCard key={project.id} project={project} />
           ))}
         </div>

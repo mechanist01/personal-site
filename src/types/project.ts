@@ -1,3 +1,4 @@
+// types/project.ts
 export interface Project {
     id: string;
     title: string;
@@ -7,7 +8,7 @@ export interface Project {
       thumbnail: string;
       gallery: string[];
     };
-    links: {
+    links?: {
       github?: string;
       live?: string;
       demo?: string;
@@ -16,6 +17,7 @@ export interface Project {
     status: 'completed' | 'in-progress';
     category: string;
     featured: boolean;
+    pinned?: boolean;  // Added the pinned property as optional
   }
   
   // Example project:
