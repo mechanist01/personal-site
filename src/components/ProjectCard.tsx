@@ -2,50 +2,11 @@
 'use client';
 
 import { Project } from '@/types/project';
-import { Github, Globe, Play, Image as ImageIcon } from 'lucide-react';
-import { useState } from 'react';
+import { Github, Globe, Play } from 'lucide-react';
 
 export function ProjectCard({ project }: { project: Project }) {
-  const [showPreview, setShowPreview] = useState(true);
-
-  const getImageUrl = () => {
-    if (!project.images?.thumbnail) {
-      return null;
-    }
-    return project.images.thumbnail;
-  };
-
-  const imageUrl = getImageUrl();
-
   return (
     <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 w-full">
-      <div 
-        className="w-full h-48 relative bg-zinc-800 cursor-pointer"
-        onClick={() => project.links?.live && setShowPreview(!showPreview)}
-      >
-        {showPreview && project.links?.live ? (
-          <iframe
-            src={project.links.live}
-            className="w-full h-full border-none"
-            title={`Preview of ${project.title}`}
-          />
-        ) : imageUrl ? (
-          <img 
-            src={imageUrl} 
-            alt={project.title}
-            className="w-full h-full object-cover"
-          />
-        ) : (
-          <div className="w-full h-full flex items-center justify-center">
-            <ImageIcon className="w-12 h-12 text-zinc-600" />
-          </div>
-        )}
-        {project.links?.live && (
-          <div className="absolute bottom-2 right-2 text-xs bg-black/50 px-2 py-1 rounded">
-            Click to {showPreview ? 'hide' : 'preview'}
-          </div>
-        )}
-      </div>
       <div className="p-4">
         <div className="flex justify-between items-start">
           <div className="space-y-1">
@@ -82,6 +43,7 @@ export function ProjectCard({ project }: { project: Project }) {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-colors"
+              aria-label="View GitHub repository"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -92,6 +54,7 @@ export function ProjectCard({ project }: { project: Project }) {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-colors"
+              aria-label="Visit live site"
             >
               <Globe className="w-5 h-5" />
             </a>
@@ -102,6 +65,7 @@ export function ProjectCard({ project }: { project: Project }) {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-zinc-400 hover:text-white transition-colors"
+              aria-label="Watch demo"
             >
               <Play className="w-5 h-5" />
             </a>
