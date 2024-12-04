@@ -65,7 +65,9 @@ export function ProjectCard({ project }: { project: Project }) {
             {project.status}
           </span>
         </div>
-        <p className="mt-2 text-zinc-400 text-sm">{project.description}</p>
+        <div className="h-20 overflow-y-auto mt-2 pr-2 custom-scrollbar">
+          <p className="text-zinc-400 text-sm">{project.description}</p>
+        </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {project.technologies?.map((tech) => (
             <span key={tech} className="text-xs bg-zinc-800 px-2 py-1 rounded">
