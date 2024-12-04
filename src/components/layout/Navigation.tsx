@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { User, Phone, Mail, Menu, X, Folder, PenTool, Image } from 'lucide-react';
-import { Instagram } from 'lucide-react';
+import { User, Phone, Mail, Menu, X, Folder, PenTool, Image, Github } from 'lucide-react';import { Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+
 
 export function Navigation({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -139,6 +139,9 @@ export function Navigation({ children }: { children: React.ReactNode }) {
             </div>
             <a href="mailto:mavens_berries7n@icloud.com">
               <Mail className="w-5 h-5 cursor-pointer hover:text-zinc-300 transition-colors" />
+            </a>
+            <a href="https://github.com/mechanist01" target="_blank" rel="noopener noreferrer">
+              <Github className="w-5 h-5 cursor-pointer hover:text-zinc-300 transition-colors" />
             </a>
             <a href="https://www.instagram.com/ryanalexander.io/" target="_blank" rel="noopener noreferrer">
               <Instagram className="w-5 h-5 cursor-pointer hover:text-zinc-300 transition-colors" />

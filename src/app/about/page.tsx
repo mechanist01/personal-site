@@ -4,7 +4,7 @@ export default async function About() {
       <div className="max-w-4xl mx-auto">
         <div className="mb-6 p-4 md:p-6 bg-zinc-900 border border-zinc-800">
           <h1 className="text-xl md:text-2xl font-medium mb-2 md:mb-3">About Me</h1>
-          <p className="text-zinc-400 text-sm md:text-base">AI Developer & Sales Strategist</p>
+          <p className="text-zinc-400 text-sm md:text-base">I really just enjoy building</p>
         </div>
   
         <div className="grid gap-6">
