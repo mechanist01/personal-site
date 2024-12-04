@@ -1,20 +1,35 @@
 "use client";
 
+import Link from 'next/link';
 import { Project } from '@/types/project';
 import { Github, Globe, Pin } from 'lucide-react';
 
 export function MiniProjectCard({ project }: { project: Project }) {
+  const handleCardClick = () => {
+    if (project.links?.live) {
+      window.open(project.links.live, '_blank', 'noopener noreferrer');
+    } else if (project.links?.github) {
+      window.open(project.links.github, '_blank', 'noopener noreferrer');
+    }
+  };
+
   return (
-    <div className={`
-      p-4 md:p-6 
-      ${project.pinned 
-        ? 'bg-white border-[#1a73e8] shadow-md hover:shadow-lg' 
-        : 'bg-zinc-900 border-zinc-800 hover:border-zinc-700'
-      }
-      border
-      transition-all duration-200
-      cursor-pointer
-    `}>
+    <div 
+      role="button"
+      onClick={handleCardClick}
+      onKeyDown={(e) => e.key === 'Enter' && handleCardClick()}
+      tabIndex={0}
+      className={`
+        p-4 md:p-6 
+        ${project.pinned 
+          ? 'bg-white border-[#1a73e8] shadow-md hover:shadow-lg' 
+          : 'bg-zinc-900 border-zinc-800 hover:border-zinc-700'
+        }
+        border
+        transition-all duration-200
+        cursor-pointer
+      `}
+    >
       <div className="flex justify-between items-start">
         <div className="flex-1">
           <div className="flex items-center gap-2">
