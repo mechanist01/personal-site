@@ -1,0 +1,21 @@
+{
+    "default": [
+      {
+        "id": "brixy-location-finder",
+        "title": "BRIXY - Smart Retail Location Finder",
+        "description": "AI-powered platform that helps entrepreneurs find optimal brick-and-mortar locations using competitor and market analysis",
+        "technologies": ["Bubble.io", "Python", "Flask", "AWS", "Geospatial Analysis", "Machine Learning"],
+        "images": {
+          "thumbnail": "/projects/brixy-location-finder-thumb.jpg",
+          "gallery": []
+        },
+        "links": {
+          "live": "https://brixy.io"
+        },
+        "date": "2024-03",
+        "status": "completed",
+        "category": "web",
+        "featured": true
+      }
+    ]
+  }

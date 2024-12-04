@@ -1,0 +1,21 @@
+{
+    "default": [
+      {
+        "id": "portfolio",
+        "title": "Personal Portfolio",
+        "description": "Modern portfolio website built with Next.js and TypeScript",
+        "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+        "images": {
+          "thumbnail": "/projects/portfolio-thumb.jpg",
+          "gallery": []
+        },
+        "links": {
+          "live": "https://ryanalexander.io"
+        },
+        "date": "2024-12",
+        "status": "completed",
+        "category": "web",
+        "featured": true
+      }
+    ]
+  }

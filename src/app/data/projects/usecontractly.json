@@ -1,0 +1,21 @@
+{
+    "default": [
+      {
+        "id": "contractly",
+        "title": "Contractly Contract Analysis",
+        "description": "AI-powered contract analysis platform that helps sales representatives understand contracts, assess risks, and compare against local laws using an interactive chat interface",
+        "technologies": ["React", "Python", "Flask", "TypeScript", "Netlify", "Replit"],
+        "images": {
+          "thumbnail": "/projects/contractly-thumb.jpg",
+          "gallery": []
+        },
+        "links": {
+          "live": "https://usecontractly.com"
+        },
+        "date": "2024-12",
+        "status": "completed",
+        "category": "web",
+        "featured": true
+      }
+    ]
+}
