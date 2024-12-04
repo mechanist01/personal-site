@@ -1,10 +1,9 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { User, Phone, Mail, Menu, X, Folder, PenTool, Image, Github } from 'lucide-react';import { Instagram } from 'lucide-react';
+import { User, Phone, Mail, Menu, X, Folder, PenTool, Image, Github, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
 
 export function Navigation({ children }: { children: React.ReactNode }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -13,7 +12,6 @@ export function Navigation({ children }: { children: React.ReactNode }) {
   const phoneNumber = '737-363-3829';
   const pathname = usePathname();
 
-  // Get current page title
   const getPageTitle = (path: string) => {
     switch (path) {
       case '/':
@@ -53,11 +51,11 @@ export function Navigation({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <>
+    <div className="min-h-screen relative">
       {/* Mobile Overlay */}
       {isSidebarOpen && (
         <div 
-          className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
+          className="fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden"
           onClick={toggleSidebar}
         />
       )}
@@ -65,8 +63,8 @@ export function Navigation({ children }: { children: React.ReactNode }) {
       {/* Sidebar */}
       <div className={`
         fixed top-0 left-0 h-full w-60 border-r border-zinc-800 p-6 bg-zinc-900 
-        z-40 transition-transform duration-300 ease-in-out
-        md:translate-x-0 md:z-auto
+        z-50 transition-transform duration-300 ease-in-out
+        md:translate-x-0 md:z-30
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         <div className="flex items-center justify-between mb-12">
@@ -113,9 +111,9 @@ export function Navigation({ children }: { children: React.ReactNode }) {
       </div>
 
       {/* Main Content */}
-      <div className="md:ml-60 h-screen overflow-y-auto">
-        {/* Top Bar */}
-        <div className="h-14 md:h-16 border-b border-zinc-800 flex items-center justify-between px-4 md:px-6 bg-zinc-900">
+      <div className="md:ml-60 min-h-screen flex flex-col">
+        {/* Fixed Top Bar */}
+        <div className="fixed top-0 left-0 right-0 md:left-60 h-14 md:h-16 border-b border-zinc-800 flex items-center justify-between px-4 md:px-6 bg-zinc-900 z-30">
           <div className="flex items-center space-x-3">
             <button 
               onClick={toggleSidebar}
@@ -132,7 +130,7 @@ export function Navigation({ children }: { children: React.ReactNode }) {
                 onClick={handlePhoneClick}
               />
               {showNumber && !isMobile && (
-                <div className="absolute right-0 top-8 bg-zinc-800 text-zinc-100 py-2 px-4 rounded-lg shadow-lg whitespace-nowrap">
+                <div className="absolute right-0 top-8 bg-zinc-800 text-zinc-100 py-2 px-4 rounded-lg shadow-lg whitespace-nowrap z-50">
                   {phoneNumber}
                 </div>
               )}
@@ -149,11 +147,11 @@ export function Navigation({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        {/* Page Content */}
-        <main className="p-4 md:p-6">
+        {/* Page Content with Top Padding */}
+        <main className="flex-1 p-4 md:p-6 mt-14 md:mt-16">
           {children}
         </main>
       </div>
-    </>
+    </div>
   );
 }
