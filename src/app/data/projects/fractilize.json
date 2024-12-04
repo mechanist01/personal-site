@@ -1,0 +1,40 @@
+{
+    "default": [
+      {
+        "id": "fractilize",
+        "title": "Fractilize - Advanced Traffic Pattern Obfuscation VPN",
+        "description": "A sophisticated AWS-hosted VPN system that enhances privacy by dynamically randomizing cellular traffic packet sizes, making communication patterns indistinguishable from regular network traffic. This custom solution combines advanced networking techniques with cloud infrastructure to provide robust traffic analysis resistance.",
+        "technologies": [
+          "AWS EC2",
+          "AWS VPC",
+          "OpenVPN",
+          "Python",
+          "IPTables",
+          "NetFilter",
+          "Linux Networking",
+          "TCP/IP",
+          "Packet Analysis",
+          "Traffic Shaping",
+          "Shell Scripting",
+          "AWS Security Groups",
+          "AWS Route53",
+          "Docker"
+        ],
+        "images": {
+          "thumbnail": "/projects/fractilize-thumb.jpg",
+          "gallery": [
+            "/projects/fractilize/architecture-diagram.jpg",
+            "/projects/fractilize/traffic-analysis.jpg",
+            "/projects/fractilize/network-topology.jpg"
+          ]
+        },
+        "links": {
+          "github": "https://github.com/username/fractilize"
+        },
+        "date": "2024-12",
+        "status": "in-progress",
+        "category": "network-security",
+        "featured": true
+      }
+    ]
+  }
