@@ -1,0 +1,24 @@
+{
+    "default": [
+      {
+        "id": "claudia-chrome-extension",
+        "title": "ClaudIA - Chrome Extension for Claude AI",
+        "description": "A Chrome extension providing seamless sidebar access to Claude AI chat functionality, enabling users to interact with Claude using their API key",
+        "technologies": ["Chrome Extensions API", "JavaScript", "HTML", "CSS", "Anthropic API"],
+        "images": {
+          "thumbnail": "/projects/claudia-chrome-thumb.jpg",
+          "gallery": [
+            "/projects/claudia-chrome-1.jpg",
+            "/projects/claudia-chrome-2.jpg"
+          ]
+        },
+        "links": {
+          "live": "https://chromewebstore.google.com/detail/claudia/kcfjnkipogfmfkgmdpjdpjkcafebcpmo"
+        },
+        "date": "2024-11",
+        "status": "completed",
+        "category": "web",
+        "featured": true
+      }
+    ]
+  }
