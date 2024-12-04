@@ -3,7 +3,7 @@
       {
         "id": "portfolio",
         "title": "Personal Portfolio",
-        "description": "Modern portfolio website built with Next.js and TypeScript",
+        "description": "Custom built modern all black/gray portfolio website built with Next.js and TypeScript",
         "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
         "images": {
           "thumbnail": "/projects/portfolio-thumb.jpg",
