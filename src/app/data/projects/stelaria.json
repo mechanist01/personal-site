@@ -1,0 +1,30 @@
+{
+    "default": [
+      {
+        "id": "stelaria-personality-analyzer",
+        "title": "Stelaria Personality Integration Platform",
+        "description": "A sophisticated web platform that analyzes and integrates results from MBTI and Enneagram personality assessments, including instinct stacks, to explore the relationship between anxiety and cognitive function expression",
+        "technologies": [
+          "Bubble.io",
+          "No-code",
+          "API Integration",
+          "Database Management",
+          "Frontend Development",
+          "Backend Development"
+        ],
+        "images": {
+          "thumbnail": "/projects/stelaria-personality-analyzer-thumb.jpg",
+          "gallery": [
+            "/projects/stelaria-personality-analyzer/dashboard.jpg"
+          ]
+        },
+        "links": {
+          "live": "https://stelaria.io"
+        },
+        "date": "2024-03",
+        "status": "completed",
+        "category": "web",
+        "featured": true
+      }
+    ]
+  }
