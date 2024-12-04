@@ -1,0 +1,31 @@
+{
+    "default": [
+      {
+        "id": "voice-over-project",
+        "title": "vOP - Voice Over Project",
+        "description": "A React-based web application that enables voice-controlled project management, leveraging Claude AI for natural language processing to convert spoken project details into structured JSON schemas and manage tasks through audio inputs.",
+        "technologies": [
+          "React",
+          "Anthropic Claude API",
+          "Web Speech API",
+          "JSON Schema",
+          "Frontend Development",
+          "Voice Recognition",
+          "Natural Language Processing"
+        ],
+        "images": {
+          "thumbnail": "/projects/voice-over-project-thumb.jpg",
+          "gallery": [
+            "/projects/voice-over-project/dashboard.jpg"
+          ]
+        },
+        "links": {
+          "github": "https://github.com/username/voice-over-project"
+        },
+        "date": "2024-12",
+        "status": "in-progress",
+        "category": "web",
+        "featured": true
+      }
+    ]
+  }
