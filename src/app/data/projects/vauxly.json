@@ -1,0 +1,84 @@
+{
+    "default": [
+      {
+        "id": "vauxly-call-intelligence-platform",
+        "title": "Vauxly Call Intelligence & Analytics Platform",
+        "description": "An advanced call analytics solution combining a Chrome extension side panel for real-time call monitoring with a comprehensive web dashboard. The platform captures and processes live audio from both customer and sales representative interactions, providing instant transcription, sentiment analysis, and performance metrics. The system features an offline-capable HTML interface for note-taking and call review, while the React dashboard offers deep insights into customer sentiment journeys, rep script adherence, confidence levels, and verbal behavior patterns. The backend leverages AssemblyAI for precise transcription and HumeAI for nuanced sentiment analysis, creating a powerful tool for sales performance optimization and customer interaction analysis.",
+        "technologies": [
+          "Chrome Extension API",
+          "React.js",
+          "Flask",
+          "Python",
+          "AssemblyAI",
+          "HumeAI",
+          "HTML5",
+          "JavaScript",
+          "WebAudio API",
+          "REST APIs",
+          "Real-time Processing",
+          "Offline Storage",
+          "Natural Language Processing",
+          "Sentiment Analysis"
+        ],
+        "images": {
+          "thumbnail": "/projects/vauxly-platform-thumb.jpg",
+          "gallery": [
+            "/projects/vauxly-chrome-extension.jpg",
+            "/projects/vauxly-sentiment-dashboard.jpg",
+            "/projects/vauxly-call-analytics.jpg",
+            "/projects/vauxly-performance-metrics.jpg",
+            "/projects/vauxly-offline-interface.jpg",
+            "/projects/vauxly-transcription-view.jpg"
+          ]
+        },
+        "links": {
+          "live": "https://vauxly.com",
+          "demo": "https://vauxly.com/demo",
+          "github": "https://github.com/vauxly/call-intelligence-platform"
+        },
+        "date": "2024-10",
+        "status": "completed",
+        "category": "web",
+        "featured": true,
+        "highlights": [
+          "Real-time audio capture and processing from Chrome tabs",
+          "Dual-stream voice analysis for customer and representative",
+          "Integrated sentiment analysis and emotion tracking",
+          "Offline-capable note-taking and review system",
+          "Comprehensive performance analytics dashboard",
+          "AI-powered transcription and analysis",
+          "Sales representative performance metrics",
+          "Customer journey sentiment mapping"
+        ],
+        "technical_features": {
+          "chrome_extension": {
+            "side_panel": "Real-time call monitoring and transcription",
+            "audio_processing": "Dual-stream capture and analysis",
+            "offline_capability": "Local storage and review functionality"
+          },
+          "dashboard": {
+            "analytics": "Comprehensive call performance metrics",
+            "visualization": "Interactive sentiment journey mapping",
+            "reporting": "Detailed performance and adherence tracking"
+          },
+          "backend": {
+            "transcription": "AssemblyAI integration",
+            "sentiment": "HumeAI emotion analysis",
+            "processing": "Real-time data pipeline"
+          }
+        },
+        "development_timeline": {
+          "start": "2024-09",
+          "end": "2024-10",
+          "duration": "2 months"
+        },
+        "target_users": [
+          "Sales Representatives",
+          "Sales Managers",
+          "Customer Service Teams",
+          "Quality Assurance Analysts",
+          "Training Departments"
+        ]
+      }
+    ]
+  }
