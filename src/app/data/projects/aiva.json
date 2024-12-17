@@ -2,7 +2,7 @@
     "default": [
       {
         "id": "AIVA PM",
-        "title": "ai voice assistant project manager",
+        "title": "AIVA",
         "description": "A React-based web application that enables voice-controlled project management, leveraging Claude AI for natural language processing to convert spoken project details into structured JSON schemas and manage tasks through audio inputs.",
         "technologies": [
           "React",
